@@ -1,0 +1,58 @@
+****************************************
+Report : power
+        -analysis_effort low
+Design : traffic
+Version: V-2023.12-SP3
+Date   : Sun Mar 23 19:13:38 2025
+****************************************
+ 
+ 
+Library(s) Used:
+
+    saed32rvt_ss0p95vn40c (File: /usr/synopsys/SAED/SAED32nm_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ss0p95vn40c.db)
+ 
+ 
+Operating Conditions: ss0p95vn40c   Library: saed32rvt_ss0p95vn40c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+traffic                ForQA             saed32rvt_ss0p95vn40c
+ 
+ 
+Global Operating Voltage = 0.95 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+ 
+ 
+Attributes
+----------
+i - Including register clock pin internal power
+
+ 
+  Cell Internal Power  =   1.4809 uW   (91%)
+  Net Switching Power  = 147.0440 nW    (9%)
+                         ---------
+Total Dynamic Power    =   1.6280 uW  (100%)
+ 
+Cell Leakage Power     =  10.6005 nW
+ 
+ 
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      1.0983            0.0000            0.0000            1.0983  (  67.03%)  i
+register           0.2243        6.2640e-02        7.0049e+03            0.2939  (  17.94%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.1584        8.4404e-02        3.5956e+03            0.2464  (  15.04%)
+--------------------------------------------------------------------------------------------------
+Total              1.4809 uW         0.1470 uW     1.0601e+04 pW         1.6386 uW
+
+***** End Of Report *****
